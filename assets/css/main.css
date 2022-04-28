@@ -1,22 +1,121 @@
 @import "./font-icon.css";
+@import "./iransans.css";
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   direction: rtl;
+  font-family: IRANSans, Tahoma, sans-serif;
+  line-height: 27px;
+  @apply text-sm
+}
+
+a, button {
+  @apply transition-all;
+}
+
+/*#Header */
+
+/*search box*/
+.search-box {
+  @apply relative w-full text-gray-600 focus-within:text-gray-300
+}
+
+.search-box .submit-button {
+  @apply absolute inset-y-0 left-0 flex items-center pl-2;
+}
+
+.search-box button {
+  @apply p-1 outline-none
+}
+
+.search-box button .icon {
+  @apply text-3xl;
+}
+
+.search-box button:hover .icon,
+.search-box button:focus .icon,
+.search-box button:active .icon {
+  @apply text-gray-900;
+}
+
+
+.search-box input[type=search],
+.search-box input[type=text] {
+  @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900
+}
+
+.cart-button {
+  @apply inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm rounded-md text-white bg-customLightblue hover:bg-customDarkblue transition ease-in-out duration-150 ring-1 ring-slate-900/10;
+}
+
+.cart-button .cart-count-badge {
+  @apply flex absolute h-7 w-7 text-center text-white -top-2 -left-2
+}
+
+.cart-button .cart-count-badge .animate {
+  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-800 opacity-75
+}
+
+.cart-button .cart-count-badge .count {
+  @apply relative inline-flex items-center rounded-full text-center h-7 w-7 shadow-2xl bg-gray-800
+}
+
+.register-button {
+  @apply inline-flex gap-x-2 items-center px-2 border hover:bg-customLightgray text-customDarkblue font-medium rounded-md
+}
+
+.menu-section {
+  @apply col-span-12 text-white bg-customDarkblue;
+
+}
+
+.menu-section .container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8
+}
+
+.main-menu {
+  @apply col-span-8 gap-x-12 flex overflow-hidden flex-wrap relative
+}
+
+.main-menu .divider {
+  @apply relative after:w-0.5
+  after:absolute
+  after:bg-customLightgray
+  after:h-5
+  after:left-0
+  after:top-3.5
 }
 
 .nav-item {
-  @apply py-4 relative
+  @apply block relative overflow-hidden
 }
 
-.nav-item.active,
-.nav-item.current-menu-item {
-  @apply before:absolute before:top-0 inset-x-0 before:mx-auto before:rounded-b-full before:h-2 before:w-full before:bg-blue-500
+.nav-link {
+  @apply py-4 block relative before:absolute inset-x-0
+  whitespace-nowrap
+  before:mx-auto
+  before:rounded-b-full
+  before:h-2
+  before:w-full
+  before:bg-customLightblue
+  before:transition-all before:-top-2
+  hover:before:top-0 hover:before:text-orange-400
+  focus:before:top-0 focus:before:text-orange-400
+  active:before:top-0 active:before:text-orange-400
 }
 
-.nav-item:hover,
-.nav-item:focus {
-  @apply before:absolute before:top-0 inset-x-0 before:mx-auto before:rounded-b-full before:h-2 before:w-full before:bg-blue-500
+.nav-link.active,
+.nav-item.current-menu-item .nav-link {
+  @apply before:top-0 text-white
+}
+
+.major-shopping-container {
+  @apply col-span-4 justify-end flex items-end
+}
+
+.major-shopping {
+  @apply py-3 bg-customRed mt-2 px-3 rounded-t hover:bg-orange-500
 }

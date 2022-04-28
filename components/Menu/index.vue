@@ -1,20 +1,23 @@
 <template>
-<div class="col-span-12 bg-slate-800 text-white">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-12 justify-between">
-      <div class="col-span-8 gap-x-10 flex">
-
-        <MenuItem :class="key === 0?'active current-menu-item':''"
-                  v-for="(i,key) in 10"
-                  v-bind:key="i"></MenuItem>
-
-      </div>
-      <div class="col-span-4 justify-end flex">
-        <button class="bg-orange-400 px-3 rounded">خرید عمده محصولات</button>
+  <div class="menu-section">
+    <div class="container">
+      <div class="grid grid-cols-12 justify-between">
+        <ul id="main-menu" class="navbar-nav main-menu">
+          <MenuItem :class="key === 0?'active current-menu-item':''"
+                    v-for="(i,key) in 5"
+                    v-bind:key="i">لینک منوی {{ i }}
+          </MenuItem>
+          <li class="divider"></li>
+          <MenuItem v-for="(i,k) in 2" :key="i">
+            منوی {{ k }}
+          </MenuItem>
+        </ul>
+        <div class="major-shopping-container">
+          <a href="#" class="major-shopping">خرید عمده محصولات</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>

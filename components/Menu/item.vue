@@ -1,5 +1,6 @@
 <template>
-  <a href="#" class="nav-item">
-    منو اول
-  </a>
+  <li class="menu-item nav-item">
+    <a href="#" class="nav-link"><span><slot/></span></a>
+  </li>
+
 </template>
