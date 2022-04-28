@@ -4,7 +4,7 @@
     <div class="grid grid-cols-12 justify-between">
       <div class="col-span-8 gap-x-10 flex">
 
-        <MenuItem :class="key === 0?'before:absolute before:top-0 inset-x-0 before:mx-auto before:rounded-b-full before:h-2 before:w-full before:bg-blue-500':''"
+        <MenuItem :class="key === 0?'active current-menu-item':''"
                   v-for="(i,key) in 10"
                   v-bind:key="i"></MenuItem>
 

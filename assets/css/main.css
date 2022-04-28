@@ -3,6 +3,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+body {
   direction: rtl;
+}
+
+.nav-item {
+  @apply py-4 relative
+}
+
+.nav-item.active,
+.nav-item.current-menu-item {
+  @apply before:absolute before:top-0 inset-x-0 before:mx-auto before:rounded-b-full before:h-2 before:w-full before:bg-blue-500
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  @apply before:absolute before:top-0 inset-x-0 before:mx-auto before:rounded-b-full before:h-2 before:w-full before:bg-blue-500
 }

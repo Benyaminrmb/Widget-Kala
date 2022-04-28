@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4 relative ">
+  <a href="#" class="nav-item">
     منو اول
-  </div>
+  </a>
 </template>
