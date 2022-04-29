@@ -84,7 +84,7 @@ a, button {
   @apply relative after:w-0.5
   after:absolute
   after:bg-customLightgray
-  after:h-5
+  after:h-6
   after:left-0
   after:top-3.5
 }
