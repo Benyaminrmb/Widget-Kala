@@ -10,7 +10,7 @@
       />
     </div>
     <div class="flex">
-      <h3 class="text-gray-800 font-light leading-6">
+      <h3 class="text-gray-800 text-xl font-light leading-9">
         لنز سوپر واید گوشی موبایل F30 0.3X Super Wide JSJSJSJSJSJSJSJs
       </h3>
     </div>

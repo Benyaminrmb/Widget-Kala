@@ -125,3 +125,9 @@ a, button {
 .tabs .active{
   @apply relative text-gray-800 after:w-0.5 after:mx-auto after:absolute after:bg-sky-400 after:inset-x-0 after:h-2 after:top-6
 }
+.text-over-image{
+  background: 0 0;
+  background: -moz-linear-gradient(top,transparent 0%,rgba(0,0,0,0.56) 100%);
+  background: -webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.56) 100%);
+  background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,0.56) 100%);
+}
