@@ -7,6 +7,13 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    screens: {
+      'xs': '475px',
+      'sm': '576px',
+      'md': '960px',
+      'lg': '1260px',
+    },
+
     extend: {
       colors: {
         transparent: 'transparent',
