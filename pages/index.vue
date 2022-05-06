@@ -11,17 +11,18 @@
 
     <Commercial></Commercial>
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container  mx-auto px-4 sm:px-6 lg:px-8">
       <productType1></productType1>
       <productType1></productType1>
     </div>
 
     <Category></Category>
 
-
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <Blog></Blog>
     </div>
+
+    <Footer></Footer>
 
   </div>
 </template>

@@ -171,3 +171,35 @@ button {
   border-bottom: 30px solid #ffffff;
   border-right: 20px solid transparent;
 }
+.footer-list li{
+  @apply text-white mt-1 before:transition before:ease-in-out relative before:absolute before:h-2 items-center cursor-pointer hover:before:bg-customLightblue before:-right-6 before:my-auto before:inset-y-0 before:w-3 before:bg-customGray
+}
+.footer-list{
+  margin-right: 25px;
+}
+.news-letter {
+  @apply relative w-full text-gray-600 focus-within:text-gray-300;
+}
+
+.news-letter .submit-button {
+  @apply absolute justify-center inset-y-0 left-0 flex items-center px-4 bg-customLightblue transition ease-in-out hover:bg-customDarkblue hover:text-customLightblue rounded-l-md  text-black;
+}
+
+.news-letter button {
+  @apply p-1 outline-none;
+}
+
+.news-letter button .icon {
+  @apply text-3xl;
+}
+
+.news-letter button:hover .icon,
+.news-letter button:focus .icon,
+.news-letter button:active .icon {
+  @apply text-gray-900;
+}
+
+.news-letter input[type="search"],
+.news-letter input[type="text"] {
+  @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900;
+}
