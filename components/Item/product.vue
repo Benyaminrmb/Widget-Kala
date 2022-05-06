@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="col-span-3 flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 group transform product-hover-shadow hover:product-hover-shadow"
-  >
+  <div class="single-product-item">
     <div class="w-full flex">
       <img
         src="~/assets/images/product1.png"

@@ -4,6 +4,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+  @variants hover, focus {
+    .product-hover-shadow {
+      @apply relative;
+      box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
 body {
   direction: rtl;
   font-family: IRANSans, Tahoma, sans-serif;
@@ -117,15 +127,19 @@ button {
 .major-shopping {
   @apply py-3 bg-customRed mt-2 px-3 rounded-t hover:bg-orange-500;
 }
+
 .tabs {
   @apply flex  text-sm items-center gap-x-5 text-gray-500 flex-wrap;
 }
+
 .tabs li {
   @apply transition ease-in-out duration-150 hover:text-customDarkblue cursor-pointer;
 }
+
 .tabs .active {
   @apply relative text-customDarkblue after:w-0.5 after:mx-auto after:absolute after:bg-customLightblue after:inset-x-0 after:h-2 after:top-6;
 }
+
 .text-over-image {
   background: 0 0;
   background: -moz-linear-gradient(
@@ -144,12 +158,39 @@ button {
     rgba(0, 0, 0, 0.56) 100%
   );
 }
-.product-hover-shadow:hover {
-  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+
+.product-tabs-content {
+  @apply grid mt-7 gap-x-6 grid-cols-12 justify-between;
+
 }
+
+.product-archive-content .single-product-item,
+.product-tabs-content .single-product-item {
+  @apply col-span-3 flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 transform hover:product-hover-shadow;
+}
+
+.single-product-item:before {
+  @apply transition-all ease-in-out duration-150;
+  content: var(--tw-content);
+  width: 0;
+  height: 2px;
+  background: #50A8EA;
+  left: 50%;
+  right: 50%;
+  position: absolute;
+  top: -1px;
+}
+
+.single-product-item:hover:before {
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+
 .custom-btn-secondary-outline {
   @apply border hover:bg-customLightblue hover:text-white transition ease-in-out duration-150 w-full rounded-md text-sm border-customLightblue text-customLightblue px-3;
 }
+
 .crooked-line:before {
   position: absolute;
   content: var(--tw-content);
@@ -171,12 +212,15 @@ button {
   border-bottom: 30px solid #ffffff;
   border-right: 20px solid transparent;
 }
-.footer-list li{
+
+.footer-list li {
   @apply text-white mt-1 before:transition before:ease-in-out relative before:absolute before:h-2 items-center cursor-pointer hover:before:bg-customLightblue before:-right-6 before:my-auto before:inset-y-0 before:w-3 before:bg-customGray
 }
-.footer-list{
+
+.footer-list {
   margin-right: 25px;
 }
+
 .news-letter {
   @apply relative w-full text-gray-600 focus-within:text-gray-300;
 }

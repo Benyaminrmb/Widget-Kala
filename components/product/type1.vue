@@ -11,22 +11,19 @@
         ></div>
 
         <ul class="tabs">
-          <li class="active">هدفون</li>
-          <li>هدفون</li>
-          <li>هدفون</li>
-          <li>هدفون</li>
+          <li class="active"><button>هدفون</button></li>
+          <li><button>هدفون</button></li>
+          <li><button>هدفون</button></li>
+          <li><button>هدفون</button></li>
         </ul>
       </div>
       <div class="col-span-2 justify-end flex">
-        <button
-          class="custom-btn-secondary-outline"
-        >
+        <button class="custom-btn-secondary-outline">
           همه محصولات را ببینید
         </button>
       </div>
     </div>
-
-    <div class="grid mt-7 gap-x-7 grid-cols-12 justify-between">
+    <div class="product-tabs-content">
       <ItemProduct v-for="i in 4" v-bind:key="i"></ItemProduct>
     </div>
   </div>
