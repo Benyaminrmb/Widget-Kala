@@ -170,21 +170,21 @@ button {
 }
 
 .single-product-item:before {
-  @apply transition-all ease-in-out duration-150;
+  @apply transition-all ease-in-out duration-150 rounded-3xl;
   content: var(--tw-content);
   width: 0;
-  height: 2px;
+  height: 4px;
   background: #50A8EA;
   left: 50%;
   right: 50%;
   position: absolute;
-  top: -1px;
+  top: 0;
 }
 
 .single-product-item:hover:before {
-  width: 80%;
-  left: 10%;
-  right: 10%;
+  width: 50%;
+  left: 25%;
+  right: 25%;
 }
 
 .custom-btn-secondary-outline {
