@@ -1,7 +1,6 @@
 @import "./font-icon.css";
 @import "./iransans.css";
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +8,11 @@ body {
   direction: rtl;
   font-family: IRANSans, Tahoma, sans-serif;
   line-height: 27px;
-  @apply text-sm
+  @apply text-sm;
 }
 
-a, button {
+a,
+button {
   @apply transition-all;
 }
 
@@ -20,7 +20,7 @@ a, button {
 
 /*search box*/
 .search-box {
-  @apply relative w-full text-gray-600 focus-within:text-gray-300
+  @apply relative w-full text-gray-600 focus-within:text-gray-300;
 }
 
 .search-box .submit-button {
@@ -28,7 +28,7 @@ a, button {
 }
 
 .search-box button {
-  @apply p-1 outline-none
+  @apply p-1 outline-none;
 }
 
 .search-box button .icon {
@@ -41,10 +41,9 @@ a, button {
   @apply text-gray-900;
 }
 
-
-.search-box input[type=search],
-.search-box input[type=text] {
-  @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900
+.search-box input[type="search"],
+.search-box input[type="text"] {
+  @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900;
 }
 
 .cart-button {
@@ -52,32 +51,31 @@ a, button {
 }
 
 .cart-button .cart-count-badge {
-  @apply flex absolute h-7 w-7 text-center text-white -top-2 -left-2
+  @apply flex absolute h-7 w-7 text-center text-white -top-2 -left-2;
 }
 
 .cart-button .cart-count-badge .animate {
-  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-800 opacity-75
+  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-customDarkblue opacity-75;
 }
 
 .cart-button .cart-count-badge .count {
-  @apply relative inline-flex items-center rounded-full text-center h-7 w-7 shadow-2xl bg-gray-800
+  @apply relative inline-flex items-center rounded-full text-center h-7 w-7 shadow-2xl bg-customDarkblue;
 }
 
 .register-button {
-  @apply inline-flex gap-x-2 items-center px-2 border hover:bg-customLightgray text-customDarkblue font-medium rounded-md
+  @apply inline-flex gap-x-2 items-center px-2 border hover:bg-customLightgray text-customDarkblue font-medium rounded-md;
 }
 
 .menu-section {
   @apply col-span-12 text-white bg-customDarkblue;
-
 }
 
 .menu-section .container {
-  @apply mx-auto px-4 sm:px-6 lg:px-8
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .main-menu {
-  @apply col-span-8 gap-x-12 flex overflow-hidden flex-wrap relative
+  @apply col-span-8 gap-x-12 flex overflow-hidden flex-wrap relative;
 }
 
 .main-menu .divider {
@@ -86,11 +84,11 @@ a, button {
   after:bg-customLightgray
   after:h-6
   after:left-0
-  after:top-3.5
+  after:top-3.5;
 }
 
 .nav-item {
-  @apply block relative overflow-hidden
+  @apply block relative overflow-hidden;
 }
 
 .nav-link {
@@ -98,36 +96,78 @@ a, button {
   whitespace-nowrap
   before:mx-auto
   before:rounded-b-full
-  before:h-2
+  before:h-1
   before:w-full
   before:bg-customLightblue
   before:transition-all before:-top-2
   hover:before:top-0 hover:before:text-orange-400
   focus:before:top-0 focus:before:text-orange-400
-  active:before:top-0 active:before:text-orange-400
+  active:before:top-0 active:before:text-orange-400;
 }
 
 .nav-link.active,
 .nav-item.current-menu-item .nav-link {
-  @apply before:top-0 text-white
+  @apply before:top-0 text-white;
 }
 
 .major-shopping-container {
-  @apply col-span-4 justify-end flex items-end
+  @apply col-span-4 justify-end flex items-end;
 }
 
 .major-shopping {
-  @apply py-3 bg-customRed mt-2 px-3 rounded-t hover:bg-orange-500
+  @apply py-3 bg-customRed mt-2 px-3 rounded-t hover:bg-orange-500;
 }
-.tabs{
-  @apply flex text-sm items-center gap-x-5 text-gray-500 flex-wrap
+.tabs {
+  @apply flex  text-sm items-center gap-x-5 text-gray-500 flex-wrap;
 }
-.tabs .active{
-  @apply relative text-gray-800 after:w-0.5 after:mx-auto after:absolute after:bg-sky-400 after:inset-x-0 after:h-2 after:top-6
+.tabs li {
+  @apply transition ease-in-out duration-150 hover:text-customDarkblue cursor-pointer;
 }
-.text-over-image{
+.tabs .active {
+  @apply relative text-customDarkblue after:w-0.5 after:mx-auto after:absolute after:bg-customLightblue after:inset-x-0 after:h-2 after:top-6;
+}
+.text-over-image {
   background: 0 0;
-  background: -moz-linear-gradient(top,transparent 0%,rgba(0,0,0,0.56) 100%);
-  background: -webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.56) 100%);
-  background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,0.56) 100%);
+  background: -moz-linear-gradient(
+    top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.56) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.56) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.56) 100%
+  );
+}
+.product-hover-shadow:hover {
+  box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.1);
+}
+.custom-btn-secondary-outline {
+  @apply border hover:bg-customLightblue hover:text-white transition ease-in-out duration-150 w-full rounded-md text-sm border-customLightblue text-customLightblue px-3;
+}
+.crooked-line:before {
+  position: absolute;
+  content: var(--tw-content);
+  left: -20px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #ffffff;
+  border-left: 20px solid transparent;
+}
+
+.crooked-line:after {
+  position: absolute;
+  content: var(--tw-content);
+  right: -20px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #ffffff;
+  border-right: 20px solid transparent;
 }

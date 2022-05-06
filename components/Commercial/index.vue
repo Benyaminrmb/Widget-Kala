@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 my-7 w-full">
+  <div class="bg-customDarkblue my-7 w-full">
     <div class="container p-14 mx-auto px-5 sm:px-6 lg:px-8">
       <h3 class="text-2xl text-white">برند ها</h3>
 

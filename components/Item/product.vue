@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-3 flex rounded-md flex-wrap border border-gray-200 p-3 transition duration-150 group transform hover:shadow-2xl"
+    class="col-span-3 flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 group transform product-hover-shadow hover:product-hover-shadow"
   >
     <div class="w-full flex">
       <img
@@ -10,12 +10,12 @@
       />
     </div>
     <div class="flex">
-      <h3 class="text-gray-800 text-xl font-light leading-9">
+      <h3 class="text-customDarkblue cursor-pointer text-base font-light leading-7">
         لنز سوپر واید گوشی موبایل F30 0.3X Super Wide JSJSJSJSJSJSJSJs
       </h3>
     </div>
-    <div class="flex text-orange-500 text-xs justify-end w-full">
-      <span>VIVU برند</span>
+    <div class="flex cursor-pointer text-orange-500 text-xs justify-end w-full">
+      <a >VIVU برند</a>
     </div>
     <div class="flex line-through text-gray-700 text-xl w-full">
             <span
@@ -33,12 +33,12 @@
             >150،000</span
             >
 
-      <div class="px-2 py-1 bg-gray-400 text-xs rounded">40%</div>
+      <div class="px-2 py-1 bg-customLightGray text-xs rounded">40%</div>
       <div
-        class="border-2 group-hover:bg-gray-800 group-hover:text-white transition duration-150 items-center justify-center rounded-xl border-gray-800"
+        class="border-2 group-hover:bg-customDarkblue group-hover:text-white transition duration-150 items-center justify-center rounded-xl border-customDarkblue"
       >
-        <button class="flex">
-          <span class="icon flex text-5xl icon-trolley"> </span>
+        <button class="flex justify-center">
+          <span class="icon justify-center w-10 flex text-4xl icon-trolley"> </span>
         </button>
       </div>
     </div>

@@ -19,7 +19,7 @@
       </div>
       <div class="col-span-2 justify-end flex">
         <button
-          class="border w-full rounded-md text-sm border-sky-500 text-sky-500 px-3"
+          class="custom-btn-secondary-outline"
         >
           همه محصولات را ببینید
         </button>
