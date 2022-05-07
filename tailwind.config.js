@@ -13,7 +13,9 @@ module.exports = {
       'md': '960px',
       'lg': '1324px',
     },
-
+    content: {
+      'lines': 'url("~/assets/images/lines.svg")',
+    },
     extend: {
       colors: {
         transparent: 'transparent',

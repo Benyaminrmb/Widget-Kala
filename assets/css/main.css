@@ -246,3 +246,26 @@ button {
 .news-letter input[type="text"] {
   @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900;
 }
+.btn-custom-white{
+  @apply transition ease-in-out duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex
+}
+.btn-custom-white a{
+  @apply flex cursor-pointer text-base
+}
+.btn-custom-dark-blue{
+  @apply transition ease-in-out duration-150 bg-customDarkblue hover:bg-white hover:text-customDarkblue text-white rounded-md p-2 px-4 justify-center flex
+}
+.btn-custom-dark-blue a{
+  @apply flex cursor-pointer text-base
+}
+.btn-custom-outline-white{
+  @apply transition relative ease-in-out border-2 border-customDarkblue duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex
+}
+.btn-custom-outline-white a{
+  @apply flex cursor-pointer text-base
+}
+.btn-custom-outline-white.active{
+  @apply before:absolute before:w-5 before:h-5 before:top-0 before:right-1.5 before:content-lines bg-customDarkblue text-white;
+
+
+}

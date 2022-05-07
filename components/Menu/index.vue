@@ -8,8 +8,10 @@
                     v-bind:key="i">لینک منوی {{ i }}
           </MenuItem>
           <li class="divider"></li>
-          <MenuItem v-for="(i,k) in 2" :key="i">
+          <MenuItem v-for="(i,k) in 1" :key="i">
             منوی {{ k }}
+          </MenuItem>
+          <MenuItem :href="'/categories'"> categories
           </MenuItem>
         </ul>
         <div class="major-shopping-container">
