@@ -87,11 +87,11 @@ button {
 
 .main-menu .divider {
     @apply relative after:w-0.5
-  after:absolute
-  after:bg-customLightgray
-  after:h-6
-  after:left-0
-  after:top-3.5;
+    after:absolute
+    after:bg-customLightgray
+    after:h-6
+    after:left-0
+    after:top-3.5;
 }
 
 .nav-item {
@@ -100,16 +100,16 @@ button {
 
 .nav-link {
     @apply py-4 block relative before:absolute inset-x-0
-  whitespace-nowrap
-  before:mx-auto
-  before:rounded-b-full
-  before:h-1
-  before:w-full
-  before:bg-customLightblue
-  before:transition-all before:-top-2
-  hover:before:top-0 hover:before:text-orange-400
-  focus:before:top-0 focus:before:text-orange-400
-  active:before:top-0 active:before:text-orange-400;
+    whitespace-nowrap
+    before:mx-auto
+    before:rounded-b-full
+    before:h-1
+    before:w-full
+    before:bg-customLightblue
+    before:transition-all before:-top-2
+    hover:before:top-0 hover:before:text-orange-400
+    focus:before:top-0 focus:before:text-orange-400
+    active:before:top-0 active:before:text-orange-400;
 }
 
 .nav-link.active,
@@ -140,19 +140,19 @@ button {
 .text-over-image {
     background: 0 0;
     background: -moz-linear-gradient(
-        top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.56) 100%
+            top,
+            transparent 0%,
+            rgba(0, 0, 0, 0.56) 100%
     );
     background: -webkit-linear-gradient(
-        top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.56) 100%
+            top,
+            transparent 0%,
+            rgba(0, 0, 0, 0.56) 100%
     );
     background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgba(0, 0, 0, 0.56) 100%
+            to bottom,
+            transparent 0%,
+            rgba(0, 0, 0, 0.56) 100%
     );
 }
 
@@ -242,24 +242,19 @@ button {
 .news-letter input[type='text'] {
     @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900;
 }
+
 .btn-custom-white {
-    @apply transition ease-in-out duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex;
+    @apply transition ease-in-out duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex cursor-pointer text-base;
 }
-.btn-custom-white a {
-    @apply flex cursor-pointer text-base;
-}
+
 .btn-custom-dark-blue {
-    @apply transition ease-in-out duration-150 bg-customDarkblue hover:bg-white hover:text-customDarkblue text-white rounded-md p-2 px-4 justify-center flex;
+    @apply transition ease-in-out duration-150 bg-customDarkblue hover:bg-white hover:text-customDarkblue text-white rounded-md p-2 px-4 justify-center flex cursor-pointer text-base;
 }
-.btn-custom-dark-blue a {
-    @apply flex cursor-pointer text-base;
+
+.btn-custom-outline-dark-blue {
+    @apply relative transition relative ease-in-out border-2 border-customDarkblue duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex cursor-pointer text-base;
 }
-.btn-custom-outline-white {
-    @apply transition relative ease-in-out border-2 border-customDarkblue duration-150 hover:bg-customDarkblue hover:text-white rounded-md p-2 px-4 justify-center flex;
-}
-.btn-custom-outline-white a {
-    @apply flex cursor-pointer text-base;
-}
-.btn-custom-outline-white.active {
-    @apply before:absolute before:w-5 before:h-5 before:top-0 before:right-1.5 before:content-lines bg-customDarkblue text-white;
+
+.btn-custom-outline-dark-blue.active {
+    @apply before:absolute before:w-5 before:h-5 before:top-0 before:right-1.5 before:content-lines bg-customDarkblue text-white
 }

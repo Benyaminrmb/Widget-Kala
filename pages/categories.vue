@@ -10,23 +10,12 @@
                             class="w-full rounded-md" />
                     </div>
                 </div>
-                <div class="col-span-9 flex flex-wrap">
-                    <div class="grid gap-5 grid-rows-2 w-full">
-                        <!--            TODO it's must generate without `items-start` Idk how to fix it yet. -->
-                        <div
-                            class="row-span-1 gap-3 w-full flex flex-wrap justify-center items-start">
-                            <div
-                                v-for="(i, key) in 12"
-                                v-bind:key="i"
-                                :class="key === 0 ? 'active' : ''"
-                                class="btn-custom-outline-white">
-                                <a href="#"> شارژر و کابل </a>
-                            </div>
-                        </div>
-
-                        <div
-                            class="row-span-1 gap-3 w-full flex flex-wrap justify-center items-start"></div>
-                    </div>
+                <div class="col-span-9 flex flex-wrap flex-col">
+                      <ul class="row-span-1 gap-x-3 gap-y-1 w-full flex flex-wrap justify-start items-start">
+                          <li v-for="(i, key) in 10" v-bind:key="i">
+                              <a href="#" :class="key === 1 ? 'active' : ''" class="btn-custom-outline-dark-blue">  شارژر و کابل {{ i }}</a>
+                          </li>
+                      </ul>
                 </div>
             </div>
         </div>
