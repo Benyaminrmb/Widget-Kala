@@ -1,13 +1,15 @@
 <template>
-  <div class="grid gap-x-7 grid-cols-12 justify-between">
-    <div class="col-span-4">
-      <SliderItem :src="require('~/assets/images/image1.png')"></SliderItem>
+    <div class="grid gap-x-7 grid-cols-12 justify-between">
+        <div class="col-span-4">
+            <SliderItem
+                :src="require('~/assets/images/image1.png')"></SliderItem>
+        </div>
+        <div class="col-span-8">
+            <SliderItem
+                :src="require('~/assets/images/image2.png')"></SliderItem>
+        </div>
     </div>
-    <div class="col-span-8">
-      <SliderItem :src="require('~/assets/images/image2.png')"></SliderItem>
-    </div>
-  </div>
 </template>
 <script>
-export default {};
+export default {}
 </script>
