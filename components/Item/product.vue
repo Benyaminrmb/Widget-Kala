@@ -1,7 +1,7 @@
 <template>
   <div class="single-product-item group">
     <div class="w-full flex">
-      <imgS
+      <img
         src="~/assets/images/product1.png"
         class="w-full rounded-lg"
         alt="" />
