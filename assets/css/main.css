@@ -264,3 +264,31 @@ button {
 .darkHorizontalLines {
   @apply relative before:absolute before:w-5 before:h-5 before:top-0 before:-right-9 before:content-darkHorizontalLines;
 }
+.h-280{
+  height: 280px;
+}
+.thin-scrollbar::-webkit-scrollbar {
+  width: 1px;               /* width of the entire scrollbar */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: #F5F5F5;        /* color of the tracking area */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #9195A0;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /*border: 3px solid orange;  !* creates padding around scroll thumb *!*/
+}
+
+/* Toggle A */
+input:checked ~ .dot {
+  transform: translateX(140%);
+  background-color: #ffffff;
+}
+input:checked ~ .parent {
+
+  background-color: #50a8ea;
+}
+
+

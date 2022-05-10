@@ -1,7 +1,7 @@
 <template>
-  <div class="single-product-item">
+  <div class="single-product-item group">
     <div class="w-full flex">
-      <img
+      <imgS
         src="~/assets/images/product1.png"
         class="w-full rounded-lg"
         alt="" />
@@ -25,7 +25,7 @@
     <div
       class="flex gap-x-4 items-center justify-between text-gray-700 text-xl w-full">
       <span
-        class="after:content-[attr(data-after)] after:text-sm items-center after:left-0 relative"
+        class="after:content-[attr(data-after)] text-customLightblue after:text-sm items-center after:left-0 relative"
         data-after="هزار تومان"
         >150،000</span
       >
