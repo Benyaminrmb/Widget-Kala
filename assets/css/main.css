@@ -162,7 +162,7 @@ button {
 
 .product-archive-content .single-product-item,
 .product-tabs-content .single-product-item {
-  @apply col-span-3 flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 transform hover:product-hover-shadow;
+  @apply  flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 transform hover:product-hover-shadow;
 }
 
 .single-product-item:before {
