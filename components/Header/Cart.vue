@@ -1,8 +1,8 @@
 <template>
   <div class="relative inline-flex">
     <a href="#" class="cart-button gap-x-4">
-      <span class="flex">45,000,000 تومان</span>
-      <span class="icon flex text-3xl text-white icon-trolley"></span>
+      <span class="flex hidden md:block">45,000,000 تومان</span>
+      <span class="icon flex md:text-3xl text-6xl text-customGray md:text-white icon-trolley"></span>
       <span class="cart-count-badge">
         <span class="animate"></span>
         <span class="count">

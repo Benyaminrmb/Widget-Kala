@@ -1,5 +1,5 @@
 <template>
-  <div class="single-product-item group col-span-3">
+  <div class="single-product-item group col-span-12 md:col-span-3">
     <div class="w-full flex">
       <img
         src="~/assets/images/product1.png"

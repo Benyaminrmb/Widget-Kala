@@ -22,7 +22,7 @@
       <Blog></Blog>
     </div>
 
-    <Footer></Footer>
+
   </div>
 </template>
 

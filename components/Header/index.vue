@@ -1,14 +1,24 @@
 <template>
   <header class="col-span-12">
     <nav class="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-      <div class="grid grid-cols-12 py-9 items-center">
+      <div class="md:grid flex md:grid-cols-12 items-center py-9 justify-between lg:items-center">
+        <div class="md:hidden flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class='h-6 w-6' viewBox="0 0 17 14">
+            <g id="Group_2048" data-name="Group 2048" transform="translate(-348.5 -8.5)">
+              <line id="Line_554" data-name="Line 554" x2="15" transform="translate(349.5 9.5)" fill="none" stroke="#9195a0" stroke-linecap="round" stroke-width="2"/>
+              <line id="Line_555" data-name="Line 555" x2="15" transform="translate(349.5 15.5)" fill="none" stroke="#9195a0" stroke-linecap="round" stroke-width="2"/>
+              <line id="Line_556" data-name="Line 556" x2="15" transform="translate(349.5 21.5)" fill="none" stroke="#9195a0" stroke-linecap="round" stroke-width="2"/>
+            </g>
+          </svg>
+
+        </div>
         <div class="col-span-2 flex-wrap flex">
-          <span class="flex items-center gap-3 text-2xl w-full">
+          <span class="flex items-center md:justify-start justify-center gap-3 text-2xl w-full">
             <span>Widget Kala</span>
           </span>
-          <span class="flex text-xs w-full">online shopping accessories</span>
+          <span class="flex text-xs md:justify-start justify-center w-full">online shopping accessories</span>
         </div>
-        <div class="col-span-1 flex-wrap flex">
+        <div class="col-span-1 flex-wrap hidden md:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32.192"
@@ -28,7 +38,7 @@
               fill="#008aff" />
           </svg>
         </div>
-        <div class="col-span-4 flex-wrap flex">
+        <div class="col-span-4 flex-wrap flex hidden md:block">
           <HeaderSearchbox></HeaderSearchbox>
         </div>
         <div class="col-span-5 justify-end gap-x-2 flex-wrap flex">

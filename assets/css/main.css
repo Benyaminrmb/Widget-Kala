@@ -27,7 +27,9 @@ button {
 
 /*search box*/
 .search-box {
-  @apply relative w-full text-gray-600 focus-within:text-gray-300;
+  @apply flex relative w-full text-gray-600 focus-within:text-gray-300
+  before:absolute before:block before:inset-x-32 md:before:inset-x-8 before:rounded-full before:h-1 before:-top-0.5 before:bg-customDarkblue
+  ;
 }
 
 .search-box .submit-button {
@@ -54,23 +56,26 @@ button {
 }
 
 .cart-button {
-  @apply inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm rounded-md text-white bg-customLightblue hover:bg-customDarkblue transition ease-in-out duration-150 ring-1 ring-slate-900/10;
+
+  @apply md:inline-flex md:items-center md:px-4 md:py-2 md:font-semibold md:leading-6 md:text-sm md:rounded-md md:text-white md:bg-customLightblue
+  md:hover:bg-customDarkblue md:ring-1 md:ring-slate-900/10;
 }
 
-.cart-button .cart-count-badge {
-  @apply flex absolute h-7 w-7 text-center text-white -top-2 -left-2;
+.cart-button .cart-count-badge{
+  @apply flex absolute h-7 w-7 text-center text-white -top-2 -right-2;
 }
 
-.cart-button .cart-count-badge .animate {
+
+.cart-button .cart-count-badge .animate{
   @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-customDarkblue opacity-75;
 }
 
-.cart-button .cart-count-badge .count {
+.cart-button .cart-count-badge .count{
   @apply relative inline-flex items-center rounded-full text-center h-7 w-7 shadow-2xl bg-customDarkblue;
 }
 
 .register-button {
-  @apply inline-flex gap-x-2 items-center px-2 border hover:bg-customLightgray text-customDarkblue font-medium rounded-md;
+  @apply  gap-x-2 items-center px-2 border hover:bg-customLightgray text-customDarkblue font-medium rounded-md;
 }
 
 .menu-section {
@@ -126,7 +131,7 @@ button {
 }
 
 .tabs {
-  @apply flex  text-sm items-center gap-x-5 text-gray-500 flex-wrap;
+  @apply md:flex hidden text-sm items-center gap-x-5 text-gray-500 flex-wrap;
 }
 
 .tabs li {
@@ -183,7 +188,7 @@ button {
 }
 
 .custom-btn-secondary-outline {
-  @apply border hover:bg-customLightblue hover:text-white transition ease-in-out duration-150 w-full rounded-md text-sm border-customLightblue text-customLightblue px-3;
+  @apply md:border hover:bg-customLightblue hover:text-white transition ease-in-out duration-150 w-full rounded-md text-sm border-customLightblue text-customLightblue px-3;
 }
 
 .crooked-line:before {
@@ -291,4 +296,9 @@ input:checked ~ .parent {
   background-color: #50a8ea;
 }
 
-
+.paginate-btn.active{
+  @apply border-customDarkWhite bg-customLightblue text-white
+}
+.paginate-btn{
+  @apply flex border border-customDarkWhite rounded-md p-2 px-3 gap-2 text-customGray hover:bg-customLightblue transition ease-in-out hover:text-white
+}

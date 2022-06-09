@@ -21,156 +21,91 @@
           </div>
         </div>
 
-        <div class="col-span-3 flex flex-wrap">
-          <div class="w-full border border-customDarkWhite rounded-md">
-            <div class="bg-customLightblue p-3 px-12">
-              <span class="darkHorizontalLines text-white">فیلتر ها</span>
-            </div>
-
-            <div class="flex flex-wrap p-3 py-4">
-              <div class="flex w-full justify-between border-b pb-4">
-                <span class="flex"> جستجو </span>
-                <span class="flex">+</span>
-              </div>
-
-              <div class="flex mt-3 flex-wrap w-full">
-                <div class="flex w-full">برند ها</div>
-
-                <div class="flex mt-3 w-full">
-                  <input
-                    class="p-2 text-gray-600 w-full border rounded-md"
-                    placeholder="برند خود را جستجو کنید"
-                    type="text" />
-                </div>
-
-                <div class="flex flex-wrap mt-3 w-full pb-4 border-b">
-                  <div
-                    class="flex flex-wrap w-full gap-y-2 overflow-y-scroll h-280 thin-scrollbar px-2">
-                    <div
-                      v-for="i in 40"
-                      class="flex w-full justify-between items-center flex-wrap">
-                      <div class="flex gap-x-2 items-center">
-                        <div class="flex">
-                          <input class="w-4 h-4" type="checkbox" />
-                        </div>
-                        <span class="flex">نیلکن</span>
-                      </div>
-
-                      <div class="flex">
-                        <span class="text-gray-600 text-xs">nilken</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex mt-3 w-full">
-                  <div
-                    class="flex w-full justify-between items-center flex-wrap">
-                    <span class="flex"> آیتم‌های موجود </span>
-                    <div class="flex">
-                      <label for="toggleB" class="cursor-pointer">
-                        <!-- toggle -->
-                        <div class="relative">
-                          <!-- input -->
-                          <input type="checkbox" id="toggleB" class="sr-only" />
-                          <!-- line -->
-                          <div
-                            class="block parent bg-customLightgray2 w-14 h-7 rounded-md"></div>
-                          <!-- dot -->
-                          <div
-                            class="dot absolute left-1 top-1 bg-customGray w-5 h-5 rounded-full transition"></div>
-                        </div>
-                        <!-- label -->
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-span-3 block flex-wrap">
+          <ItemSideFilter></ItemSideFilter>
         </div>
 
         <div class="col-span-9 gap-5 flex flex-wrap flex-col">
-          <div class="flex w-full justify-between ">
-            <div class="flex items-center gap-x-3">
-              <span class="flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32.065"
-                  height="18.938"
-                  viewBox="0 0 32.065 18.938">
-                  <g
-                    id="Group_1869"
-                    data-name="Group 1869"
-                    transform="translate(32.065 12.438) rotate(180)">
-                    <line
-                      id="Line_49"
-                      data-name="Line 49"
-                      x2="23"
-                      transform="translate(0 10)"
-                      fill="none"
-                      stroke="#9195a0"
-                      stroke-width="3" />
-                    <line
-                      id="Line_50"
-                      data-name="Line 50"
-                      x2="18.5"
-                      transform="translate(0 5)"
-                      fill="none"
-                      stroke="#9195a0"
-                      stroke-width="3" />
-                    <line
-                      id="Line_51"
-                      data-name="Line 51"
-                      x2="14.5"
-                      fill="none"
-                      stroke="#9195a0"
-                      stroke-width="3" />
-                    <line
-                      id="Line_95"
-                      data-name="Line 95"
-                      x2="10.5"
-                      transform="translate(0 -5)"
-                      fill="none"
-                      stroke="#9195a0"
-                      stroke-width="3" />
-                  </g>
-                  <path
-                    id="Path_427"
-                    data-name="Path 427"
-                    d="M14.94,18.09a1,1,0,0,1-.72-.3L10.69,14.2a1,1,0,1,1,1.43-1.41l2.82,2.88,2.82-2.88a1,1,0,1,1,1.41,1.42L15.63,17.8A1,1,0,0,1,14.94,18.09Z"
-                    transform="translate(-10.401 0.438)"
-                    fill="#9195a0" />
-                  <path
-                    id="Path_428"
-                    data-name="Path 428"
-                    d="M15,18a1,1,0,0,1-1-1V.562a1,1,0,0,1,2,0V17A1,1,0,0,1,15,18Z"
-                    transform="translate(-10.401 0.438)"
-                    fill="#9195a0" />
-                </svg>
-              </span>
-              <span class="flex">مرتب سازی :</span>
-              <ul class="flex gap-x-5 text-xs text-customLighterMediumGray">
-                <li><a href="">ارزان ترین</a></li>
-                <li><a href="">گران ترین</a></li>
-                <li><a href="">پرفروش ترین</a></li>
-                <li><a href="">محبوب ترین</a></li>
-              </ul>
-            </div>
-            <div class="flex items-center gap-x-3">
-              <span class="flex">تعداد نمایش :</span>
-              <ul class="flex gap-x-5 text-xs text-customLighterMediumGray">
-                <li><a href="">12</a></li>
-                <li><a href="">24</a></li>
-                <li><a href="">48</a></li>
-              </ul>
-            </div>
-          </div>
+          <ItemSortBy></ItemSortBy>
 
           <div class="flex w-full  ">
             <div class="product-tabs-content gap-6">
               <ItemProduct class="col-span-4" v-for="i in 9" v-bind:key="i"></ItemProduct>
             </div>
+          </div>
+
+
+          <div class="flex flex-wrap w-full justify-center gap-4">
+            <a href="#" class="flex justify-center items-center border border-customDarkWhite text-customGray rounded-md p-3 gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.042" height="16.001" viewBox="0 0 9.042 16.001">
+                <path id="Path_426" data-name="Path 426" d="M12,23a1,1,0,0,1-.71-1.71L17.62,15,11.33,8.71a1,1,0,0,1,1.41-1.42l7,7a1,1,0,0,1,0,1.42l-3.858,3.858L12.74,22.71A1,1,0,0,1,12,23Z" transform="translate(-10.994 -6.999)" fill="#9195a0"/>
+              </svg>
+
+              <span>
+                قبلی
+              </span>
+            </a>
+            <div class="flex justify-center items-center border border-customDarkWhite rounded-md p-3 gap-3">
+              <a href="#" class="paginate-btn active">
+                1
+              </a>
+
+              <a href="#" class="paginate-btn">
+                2
+              </a>
+
+              <a href="#" class="paginate-btn">
+                3
+              </a>
+
+              <div class="flex mx-6 p-2 px-3 gap-2">
+                ...
+              </div>
+
+
+              <a href="#" class="paginate-btn">
+                12
+              </a>
+
+              <a href="#" class="paginate-btn">
+                13
+              </a>
+
+              <a href="#" class="paginate-btn">
+                14
+              </a>
+
+
+              <div class="flex mx-6 p-2 px-3 gap-2">
+                ...
+              </div>
+
+
+              <a href="#" class="paginate-btn">
+                22
+              </a>
+
+              <a href="#" class="paginate-btn">
+                23
+              </a>
+
+              <a href="#" class="paginate-btn">
+                24
+              </a>
+
+
+            </div>
+            <a  href="#" class="flex justify-center items-center border border-customDarkWhite text-customGray rounded-md p-3 gap-2">
+              بعدی
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.042" height="16.001" viewBox="0 0 9.042 16.001">
+                <path id="Path_426" data-name="Path 426" d="M19.03,23a1,1,0,0,0,.71-1.71L13.41,15,19.7,8.71a1,1,0,0,0-1.41-1.42l-7,7a1,1,0,0,0,0,1.42l7,7A1,1,0,0,0,19.03,23Z" transform="translate(-10.994 -6.999)" fill="#9195a0"/>
+              </svg>
+
+              <span>
+
+              </span>
+            </a>
           </div>
 
         </div>
