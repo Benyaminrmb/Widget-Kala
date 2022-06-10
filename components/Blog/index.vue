@@ -14,8 +14,8 @@
       </div>
     </div>
 
-    <div class="grid mt-7 gap-7 grid-cols-3">
-      <div class="flex col-span-1 relative">
+    <div class="md:grid flex overflow-x-auto md:overflow-hidden mt-7 gap-7 grid-cols-3">
+      <div class="hidden md:flex col-span-1 relative">
         <div class="flex w-full">
           <img
             src="~/assets/images/blog1.png"
@@ -39,8 +39,8 @@
       <div
         v-for="i in 2"
         v-bind:key="i"
-        class="grid gap-7 grid-rows-2 col-span-1 relative">
-        <BlogItem v-for="i in 2" v-bind:key="i"></BlogItem>
+        class="flex md:grid  gap-7 grid-rows-2 col-span-1 relative">
+        <BlogItem class='min-w-full' v-for="i in 2" v-bind:key="i"></BlogItem>
       </div>
     </div>
   </div>

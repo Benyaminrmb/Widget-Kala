@@ -28,7 +28,7 @@ button {
 /*search box*/
 .search-box {
   @apply flex relative w-full text-gray-600 focus-within:text-gray-300
-  before:absolute before:block before:inset-x-32 md:before:inset-x-8 before:rounded-full before:h-1 before:-top-0.5 before:bg-customDarkblue
+  before:absolute before:block before:inset-x-24 md:before:inset-x-8 before:rounded-full before:h-1 before:-top-0.5 before:bg-customDarkblue
   ;
 }
 
@@ -131,7 +131,7 @@ button {
 }
 
 .tabs {
-  @apply md:flex hidden text-sm items-center gap-x-5 text-gray-500 flex-wrap;
+  @apply md:flex hidden text-sm items-center gap-x-5 text-gray-500 flex-wrap ;
 }
 
 .tabs li {
@@ -162,12 +162,13 @@ button {
 }
 
 .product-tabs-content {
-  @apply grid mt-7 gap-x-6 grid-cols-12 justify-between;
+  @apply flex md:grid overflow-x-auto md:overflow-x-hidden  mt-7 gap-x-6 grid-cols-12 justify-between;
 }
 
 .product-archive-content .single-product-item,
 .product-tabs-content .single-product-item {
   @apply  flex rounded-md flex-wrap  border border-gray-200 p-3 transition duration-150 transform hover:product-hover-shadow;
+  min-width: 297px;
 }
 
 .single-product-item:before {
@@ -244,6 +245,7 @@ button {
 }
 
 .news-letter input[type='search'],
+.news-letter input[type='email'],
 .news-letter input[type='text'] {
   @apply transition-all py-2 h-full px-4 text-sm text-white border block w-full rounded-md pl-10 focus:outline-none focus:shadow focus:bg-white focus:text-gray-900;
 }
@@ -301,4 +303,10 @@ input:checked ~ .parent {
 }
 .paginate-btn{
   @apply flex border border-customDarkWhite rounded-md p-2 px-3 gap-2 text-customGray hover:bg-customLightblue transition ease-in-out hover:text-white
+}
+.min-w-1\/2 {
+  min-width: 50%;
+}
+.w-388{
+  width: 388px;
 }

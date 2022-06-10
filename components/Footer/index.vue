@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-customMediumGray mt-7 w-full">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="md:block hidden container mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="bg-customLighterMediumGray gap-7 w-full grid justify-between grid-cols-4 p-4 rounded-b-md">
         <div class="col-span-1 grid grid-cols-4">
@@ -296,10 +296,10 @@
     </div>
     <div class="container mt-7 mx-auto px-4 sm:px-6 lg:px-8">
       <div
-        class="grid gap-x-7 grid-cols-2 border-b-2 border-customLighterMediumGray pb-7">
+        class="md:grid flex flex-wrap justify-center gap-x-7 grid-cols-2 border-b-2 border-customLighterMediumGray pb-7">
         <div class="col-span-1 flex flex-wrap gap-4">
-          <div class="flex w-full">
-            <div class="grid grid-cols-3 items-center">
+          <div class="flex justify-center md:justify-start w-full">
+            <div class="md:grid flex grid-cols-3 items-center">
               <div class="col-span-2 flex-wrap flex">
                 <span class="flex items-center gap-3 text-2xl w-full">
                   <span class="text-white">Widget Kala</span>
@@ -330,7 +330,7 @@
               </div>
             </div>
           </div>
-          <div class="flex w-full">
+          <div class="md:flex hidden w-full">
             <div class="w-full">
               <span class="text-justify flex font-thin text-white leading-5">
                 ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
@@ -342,8 +342,8 @@
               </span>
             </div>
           </div>
-          <div class="flex justify-between w-full gap-x-3">
-            <div class="flex gap-x-3 w-full">
+          <div class="flex justify-between w-full gap-x-3 mb-4">
+            <div class="md:flex hidden gap-x-3 w-full">
               <div class="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -468,7 +468,7 @@
                 >
               </div>
             </div>
-            <div class="flex">
+            <div class="flex justify-center w-full">
               <div class="flex gap-x-3">
                 <span class="flex">
                   <a href="">
@@ -534,12 +534,12 @@
             </div>
           </div>
         </div>
-        <div class="col-span-1 grid grid-cols-3 gap-4">
+        <div class="col-span-1 grid grid-cols-2 md:grid-cols-3 gap-4">
           <FooterList v-for="i in 3" v-bind:key="i"></FooterList>
         </div>
       </div>
-      <div class="mt-7 grid gap-x-7 grid-cols-2 pb-7">
-        <div class="flex flex-wrap col-span-1 gap-4">
+      <div class="mt-7 grid gap-x-7 grid-cols-1 md:grid-cols-2 pb-7">
+        <div class="md:flex hidden flex-wrap col-span-1 gap-4">
           <div class="flex gap-x-3 w-full">
             <div class="flex">
               <svg
